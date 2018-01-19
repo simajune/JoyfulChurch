@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		23260DEE200F84B2008DE186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23260DED200F84B2008DE186 /* AppDelegate.swift */; };
-		23260DF0200F84B2008DE186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23260DEF200F84B2008DE186 /* ViewController.swift */; };
 		23260DF3200F84B2008DE186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23260DF1200F84B2008DE186 /* Main.storyboard */; };
 		23260DF5200F84B2008DE186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23260DF4200F84B2008DE186 /* Assets.xcassets */; };
 		23260DF8200F84B2008DE186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23260DF6200F84B2008DE186 /* LaunchScreen.storyboard */; };
+		23284CED2012679D005C125B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284CEC2012679D005C125B /* SplashViewController.swift */; };
+		23284CEF201267B7005C125B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23284CEE201267B7005C125B /* MainViewController.swift */; };
+		F740B5924A209E886C8024B5 /* Pods_JoyfulChurch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6001D11185CA704B08E86875 /* Pods_JoyfulChurch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23260DEA200F84B2008DE186 /* JoyfulChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyfulChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23260DED200F84B2008DE186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23260DEF200F84B2008DE186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23260DF2200F84B2008DE186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23260DF4200F84B2008DE186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23260DF7200F84B2008DE186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23260DF9200F84B2008DE186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23284CEC2012679D005C125B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		23284CEE201267B7005C125B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F5724F86A2C8FBB77E64FF0 /* Pods-JoyfulChurch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulChurch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoyfulChurch/Pods-JoyfulChurch.debug.xcconfig"; sourceTree = "<group>"; };
+		6001D11185CA704B08E86875 /* Pods_JoyfulChurch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoyfulChurch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF4543585AEAF5BB7F2FC94 /* Pods-JoyfulChurch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoyfulChurch.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoyfulChurch/Pods-JoyfulChurch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F740B5924A209E886C8024B5 /* Pods_JoyfulChurch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC072910E0EFFB4ADAD6E59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F5724F86A2C8FBB77E64FF0 /* Pods-JoyfulChurch.debug.xcconfig */,
+				8FF4543585AEAF5BB7F2FC94 /* Pods-JoyfulChurch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		23260DE1200F84B2008DE186 = {
 			isa = PBXGroup;
 			children = (
 				23260DEC200F84B2008DE186 /* JoyfulChurch */,
 				23260DEB200F84B2008DE186 /* Products */,
+				0FC072910E0EFFB4ADAD6E59 /* Pods */,
+				A87FFB1029DCD888DD6C207C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +73,22 @@
 			isa = PBXGroup;
 			children = (
 				23260DED200F84B2008DE186 /* AppDelegate.swift */,
-				23260DEF200F84B2008DE186 /* ViewController.swift */,
+				23284CEE201267B7005C125B /* MainViewController.swift */,
+				23284CEC2012679D005C125B /* SplashViewController.swift */,
 				23260DF1200F84B2008DE186 /* Main.storyboard */,
 				23260DF4200F84B2008DE186 /* Assets.xcassets */,
 				23260DF6200F84B2008DE186 /* LaunchScreen.storyboard */,
 				23260DF9200F84B2008DE186 /* Info.plist */,
 			);
 			path = JoyfulChurch;
+			sourceTree = "<group>";
+		};
+		A87FFB1029DCD888DD6C207C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6001D11185CA704B08E86875 /* Pods_JoyfulChurch.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23260DFC200F84B2008DE186 /* Build configuration list for PBXNativeTarget "JoyfulChurch" */;
 			buildPhases = (
+				17B2B7E885CF7856AA7EFB10 /* [CP] Check Pods Manifest.lock */,
 				23260DE6200F84B2008DE186 /* Sources */,
 				23260DE7200F84B2008DE186 /* Frameworks */,
 				23260DE8200F84B2008DE186 /* Resources */,
+				36A1DD50D70EAE6B8336300B /* [CP] Embed Pods Frameworks */,
+				D9E4959178FF07FE3BEEE5D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +161,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17B2B7E885CF7856AA7EFB10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JoyfulChurch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36A1DD50D70EAE6B8336300B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JoyfulChurch/Pods-JoyfulChurch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JoyfulChurch/Pods-JoyfulChurch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9E4959178FF07FE3BEEE5D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JoyfulChurch/Pods-JoyfulChurch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23260DE6200F84B2008DE186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23260DF0200F84B2008DE186 /* ViewController.swift in Sources */,
+				23284CEF201267B7005C125B /* MainViewController.swift in Sources */,
+				23284CED2012679D005C125B /* SplashViewController.swift in Sources */,
 				23260DEE200F84B2008DE186 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +365,7 @@
 		};
 		23260DFD200F84B2008DE186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F5724F86A2C8FBB77E64FF0 /* Pods-JoyfulChurch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +380,7 @@
 		};
 		23260DFE200F84B2008DE186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF4543585AEAF5BB7F2FC94 /* Pods-JoyfulChurch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
